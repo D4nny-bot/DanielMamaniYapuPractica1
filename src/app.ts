@@ -13,3 +13,10 @@ function Primo(n: number){
         console.log("False")
 }
 Primo(11);
+//prblema 2
+function invertirCadena(str: String){
+    var cad: String = str.split("").reverse().join("");
+    console.log(cad);
+}
+invertirCadena("hola mundo");
+// problema 3
