@@ -20,3 +20,12 @@ function invertirCadena(str: String){
 }
 invertirCadena("hola mundo");
 // problema 3
+function palindromo(str: String){
+    var cad: String = str.split("").reverse().join("");
+    if(cad == str)
+        console.log("True");
+    else
+        console.log("False");
+}
+palindromo("bangnab");
+// problema 4
