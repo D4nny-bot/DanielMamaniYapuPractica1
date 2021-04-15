@@ -29,3 +29,26 @@ function palindromo(str: String){
 }
 palindromo("bangnab");
 // problema 4
+function productoGrande(arr: Array<number>){
+    var num: Array<number> = arr;
+    if(num.length > 1){
+        var max: number = num[0]*num[1];
+        var com: number;
+        for(var i = 1; i < num.length - 1; i++){
+            com = num[i] * (num[i+1]);
+            if(max < com){
+                max = com;
+            }
+        }
+    console.log(max);
+    }
+    else
+    {
+        if(num.length == 1){
+            var max: number = num[0];
+            console.log(max);
+        }
+    }
+}
+productoGrande([4, 7, 6, 5]);
+// problema 5
