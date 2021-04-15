@@ -52,3 +52,16 @@ function productoGrande(arr: Array<number>){
 }
 productoGrande([4, 7, 6, 5]);
 // problema 5
+function pieck(n: Array<number>){
+    var num: Array<number> = n.sort(function(a,b){return a - b});
+    //var i: number = num[0];
+    var cad: Array<number> = [];
+    var con: number = 0;
+    for(var i = num[0]; i <= num[num.length-1]; i++){
+        cad[con] = num[i]; 
+        con++;
+    }
+    console.log(cad.length-num.length);
+}
+pieck([6, 2, 3, 8]);
+//problema 6
