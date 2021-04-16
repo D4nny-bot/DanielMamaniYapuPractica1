@@ -65,3 +65,27 @@ function pieck(n: Array<number>){
 }
 pieck([6, 2, 3, 8]);
 //problema 6
+
+// problema 8
+function Prim(n: number){
+    let cad: Array<number> = [];
+    let ite: number = 0;
+    let prim: number = 2;
+    let con: number = 0;
+    while(n > 0){
+        for(let i = 1; i <= prim; i++){
+            if(prim % i == 0){
+            con++;
+            }
+        }
+        if(con == 2){
+            cad[ite] = prim;
+            ite++;
+            n--;
+        }
+        prim++;
+        con=0;   
+    }
+    console.log(cad);
+}
+Prim(6);
